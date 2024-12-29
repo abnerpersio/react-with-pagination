@@ -21,6 +21,8 @@ export class ClientsService {
       },
     });
 
+    await new Promise((resolve) => setTimeout(resolve, 1_000));
+
     return data;
   }
 }
